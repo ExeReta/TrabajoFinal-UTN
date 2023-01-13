@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: antiquewhite; */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* -------Navegacion--------- */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    background: white;
+    /* background-color: brown; */
+}
+
+.barraNav {
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0px;
+    position: relative;
+}
+
+.navegacion {
+    /* background-color: aquamarine; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 100%;
+
+}
+
+.lista {
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    align-items: center;
+    margin: 0px;
+    height: 100%;
+}
+
+.lista li {
+    display: list-item;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: medium;
+    letter-spacing: 1.25px;
+    white-space: normal;
+}
+
+.btn {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    color: black;
+}
+
+.btn::after {
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+}
+
+.estilos::after {
+    transform:scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.estilos:hover::after {
+    transform: scale(1, 1);
+}
+
+.tattoos::after {
+    transform:scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.tattoos:hover::after {
+    transform: scale(1, 1);
+}
+
+.home {
+    /* background-color: blue; */
+   margin-right: 5px;
+}
+
+.lista a.focus {
+    border: 2px solid var(--grisOscuro);
+}
+
+/* -------Buscador--------- */
+
+.iconoLupa {
+    /* background-color: red; */
+    display: flex;
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    justify-content: center;
+    align-items:center;
+    margin:100%;
+
+}
+
+.iconoLupa i{
+    font-size: 15px;
+    color: darkslategrey;
+    cursor: pointer;
+    padding: 15px 25px;
+}
+
+.ctn-barraBuscar {
+    position: fixed;
+    /* position fixed para q quede fija */
+    top: 80px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    z-index: 10;
+    /* el z index hace q el buscador este por encima de todo */
+}
+
+.ctn-barraBuscar input {
+    /* display: block; */
+    width: 1280px;
+    margin: 0px;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0; 
+    /* el outline es para q no se marque con un recuadro negro la barra buscadora cunado aprieto para escribir */
+}
+
+.box-search {
+    position: fixed;
+    margin: 0px;
+    top: 165px;
+    width: 1280px;
+    background: white;
+    z-index: 9;
+    list-style-type: none;
+}
+
+.box-search li a{
+    display: block;
+    /* hago display block para que cada a se vea como un bloque, cada una con su margen */
+    width: 1280px;
+    color: darkslategray;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.box-search li a i{
+    margin-right: 10px;
+}
+
+.box-search li a:hover{
+    background-color: whitesmoke;
+}
+
+/* -------Imagen Protada--------- */
+
+.contenedor {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    top: 60px;
+}
+
+.contenedor img {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor h2 {
+    font-size: 20px;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    color: azure;
+
+}
+
+.contenedor h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    color: azure;
+}
+
+.contenedor p {
+    font-size: 20px;
+    position: absolute;
+    top: 14%;
+    left: 3%;
+    color: azure;
+}
+
+/* -------Sector media queries--------- */
+
+@media (max-width:1080){
+    .imagen {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+
+}
