@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
     /* background-color: antiquewhite; */
-    box-sizing: border-box;
     width: 100%;
 }
 
@@ -27,8 +28,9 @@ header {
     display: flex;
     justify-content: space-between;
     max-width: 1280px;
-    margin: 0px;
+    margin: auto;
     position: relative;
+    align-items: center;
 }
 
 .navegacion {
@@ -61,7 +63,6 @@ header {
 
 .btn {
     position: relative;
-    text-decoration: none;
     cursor: pointer;
     padding: 15px 25px;
     color: black;
@@ -162,7 +163,6 @@ header {
     width: 1280px;
     color: darkslategray;
     padding: 10px;
-    text-decoration: none;
 
 }
 
@@ -176,50 +176,202 @@ header {
 
 /* -------Imagen Protada--------- */
 
-.contenedor {
+.portada {
     width: 100%;
-    height: fit-content;
-    position: relative;
-    overflow: hidden;
-    top: 60px;
+    height: 850px;
+    top: 55px;
+    position:relative;
 }
 
-.contenedor img {
+.imgPortada {
+    background-color: antiquewhite;
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 
-.contenedor h2 {
+.contenedorInfo {
+    /* background-color: red; */
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top: 70px;
+    /* margin: auto; */
+    /* no me funciona el margin auto */
+    margin-left: 120px;
+}
+
+.contenedorInfo h2 {
+    font-size: 25px;
+    color: azure;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+
+}
+
+.contenedorInfo h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: azure;
+}
+
+.contenedorInfo p {
     font-size: 20px;
-    position: absolute;
-    top: 2%;
-    left: 3%;
     color: azure;
+    letter-spacing: 1px;
+}
+
+/* -------cuerpo--------- */
+
+.card1 {
+    /* background-color: red; */
+    width: 1280px;
+    top: 100px;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 
 }
 
-.contenedor h1 {
-    font-size: 40px;
+.imgNota {
+    background-color: antiquewhite;
+    background-image: url(./Imagenes/jota.png);
+    height: 500px;
+    width: 400px;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
     position: absolute;
-    top: 5%;
-    left: 3%;
-    color: azure;
+    left: 0%;
+    cursor: pointer;
 }
 
-.contenedor p {
+.notaContenido {
+    /* background-color: aquamarine; */
+    position: absolute;
+    left: 35%;
+    top: 0%;
+    width: 500px;
+    height: 225px;
+    cursor: pointer;
+}
+
+.clase {
+    color: red;
+    font-size: 14px;
+    letter-spacing: 1.25;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.titEntrevista {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.parEntrevista {
+    color: black
+}
+
+.card2 {
+    background-color: red;
+    width: 1280px;
+    top: 660px;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.imgNota2 {
+    background-color: antiquewhite;
+    background-image: url(./Imagenes/guia.jpg);
+    height: 400px;
+    width: 700px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    position: absolute;
+    right: 0%;
+    cursor: pointer;
+}
+
+.notaContenido2 {
+    /* background-color: aquamarine; */
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 500px;
+    height: 225px;
+    cursor: pointer;
+}
+
+.clase2 {
+    color: red;
+    font-size: 14px;
+    letter-spacing: 1.25;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    right: 0%;
+}
+
+.titEntrevista2 {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.parEntrevista2 {
+    color: black
+}
+
+.entreNota {
+    color: gray;
+    S
+}
+
+
+/* -------pie de pagina--------- */
+
+.container-footer {
+    width: 100%;
+    padding: 40px 0;
+    background: darkslategray;
+    margin-top: 1100px;
+}
+
+
+
+
+
+/* -------responsive--------- */
+S
+#icon-menu {
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
     font-size: 20px;
-    position: absolute;
-    top: 14%;
-    left: 3%;
-    color: azure;
+    cursor: pointer;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    display: none;
+    
 }
 
-/* -------Sector media queries--------- */
-
-@media (max-width:1080){
-    .imagen {
-        grid-template-columns: 1fr;
-        grid-gap: 40px;
-    }
-
+#icon-menu:hover {
+    background-color: whitesmoke;
+    border: 1px solid black;
 }

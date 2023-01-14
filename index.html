@@ -11,69 +11,137 @@
 <body>
     
  <!-- -------BARRA DE NAV--------- -->
-    <header>
+        <header>
 
-        <div class="barraNav">
-            <nav class="navegacion">
-                <ul class="lista">
-                    <li>
-                        <a class="home" href="index.html"><img src="imagenes/Home2.png" alt="Home"></a>
-                    </li>
-                    <li>
-                        <a class="btn estilos" href="estilos.html">Estilos
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn tattoos" href="tattoos.html">Tattoos</a>
-                    </li>
-                </ul>
-            
-<!-- 
-                <div class="iconoLupa" id="ctn-icon-search">
-                    <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
-                </div> -->
-                <!-- agrego id para llamarlos por js -->
-            </nav>
+            <div class="barraNav">
+                <nav class="navegacion">
+                    <ul class="lista">
+                        <li>
+                            <a class="home" href="index.html"><img src="imagenes/Home2.png" alt="Home"></a>
+                        </li>
+                        <li>
+                            <a class="btn estilos" href="estilos.html">Estilos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn tattoos" href="tattoos.html">Tattoos</a>
+                        </li>
+                    </ul>
+                
+                    <!-- 
+                    <div class="iconoLupa" id="ctn-icon-search">
+                        <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+                    </div> -->
+                    <!-- agrego id para llamarlos por js -->
+                </nav>
+            </div>
+
+            <div id="icon-menu">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </header>
+
+        <!-- <div class="ctn-barraBuscar" id="ctn-bars-search">
+            <input type="text" id="inputSearch" placeholder="Buscar">
         </div>
 
-    </header>
-
-    <!-- <div class="ctn-barraBuscar" id="ctn-bars-search">
-        <input type="text" id="inputSearch" placeholder="Buscar">
-    </div>
-
-    <ul class="box-search" id="boxSearch">
-        <li>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Estilos</a>
-        </li>
-        <li>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Tradicional</a>
-        </li>
-        <li>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Blackwork</a>
-        </li>
-        <li>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Ornamental</a>
-        </li>
-    </ul> -->
+        <ul class="box-search" id="boxSearch">
+            <li>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Estilos</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Tradicional</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Blackwork</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Ornamental</a>
+            </li>
+        </ul> -->
 
 
-<!-- -------imagen portada--------- -->
+    <!-- -------imagen portada--------- -->
 
-    <div class="portada">
-        <section class="contenedor">
-            <img src="Imagenes/tatuaje-2.jpg" alt="Cuerpo con tatuajes" width="100%">
-            <h2>
-                TATTOOTT
-            </h2>
-            <h1>
-                Conoce todo sobre el tattoo
-            </h1>
-            <p>
-                Porque tener un tattoo es llevar una pieza artistica en tu piel
-            </p>
-    </section>  
-    </div>
+        <div class="portada">
+                <img class="imgPortada" src="Imagenes/tatuaje-2.jpg" alt="Cuerpo con tatuajes" width="100%">
+                <div class="contenedorInfo">
+                    <h2>
+                        TATTOOTT
+                    </h2>
+                    <h1>
+                        CONOCE TODO SOBRE EL TATTOO
+                    </h1>
+                    <p>
+                        Porque tener un tattoo es llevar una pieza artistica en tu piel
+                    </p>
+                </div>
+        </div>
+
+        <!-- -------cuerpo--------- -->  
+
+        <div class="Container-cuerpo">  
+            <div class="card1">
+                <div class="nota1">
+                    <a class="imgNota" href="card1.html"></a>
+                    <a class="notaContenido" href="card1.html">
+                        <h3 class="clase">TATTOO ARTIST</h3>
+                        <h1 class="titEntrevista">Entrevista con Jota Tattoer</h1>
+                        <p class="parEntrevista">Una interesante nota realizada por los chicos de Whoistradi al tatuador de blackwork en Barcelona.
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="entreNota">
+
+            <div class="card2">
+                <div class="nota2">
+                    <a class="imgNota2" href="#"></a>
+                    <a class="notaContenido2" href="#">
+                        <h3 class="clase2">GUIA</h3>
+                        <h1 class="titEntrevista2">Antes de tu cita: Como prepararte de manerera ...</h1>
+                        <p class="parEntrevista2">Te contamos como prepararte de manera correcta para tu proxima cita con tu tatuado para que esta sea una buena experiencia.
+                        </p>
+                    </a>
+            </div>
+        </div>
+
+         <!-- -------pie de pagina--------- --> 
+
+        <div class="container-footer">
+            <hr>
+            <footer>
+                <div class="logo-footer">
+                    <h2>TATTOOTT</h2>
+                </div>
+
+                <div class="año">
+                    <h3>
+                        @ 2023 Tattoott 
+                    </h3>
+                </div>
+
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+
+            </footer>
+
+         </div>
+        
+        
+
+
+    
+
+
 
     <script src="script.js"></script>
 </body>
