@@ -5,21 +5,29 @@
     text-decoration: none;
 }
 
+:root {
+    --negro: #151C1A;
+    --colorado: #EA2134;
+    --blanco: #F7F7F7;
+    --gris: #6D7069;
+
+}
+
 body {
-    /* background-color: antiquewhite; */
+    background-color: var(--blanco);
     width: 100%;
 }
 
 /* -------Navegacion--------- */
 
-header {
+.header-contenido {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 50px;
     z-index: 2;
-    background: white;
+    background: var(--blanco);
     /* background-color: brown; */
 }
 
@@ -65,7 +73,7 @@ header {
     position: relative;
     cursor: pointer;
     padding: 15px 25px;
-    color: black;
+    color: var(--negro);
 }
 
 .btn::after {
@@ -75,7 +83,7 @@ header {
     height: 2px;
     left: 0;
     bottom: 0;
-    background-color: black;
+    background-color: var(--negro);
 }
 
 .estilos::after {
@@ -102,7 +110,7 @@ header {
 }
 
 .lista a.focus {
-    border: 2px solid var(--grisOscuro);
+    border: 2px solid var(--negro);
 }
 
 /* -------Buscador--------- */
@@ -121,7 +129,7 @@ header {
 
 .iconoLupa i{
     font-size: 15px;
-    color: darkslategrey;
+    color: var(--negro);
     cursor: pointer;
     padding: 15px 25px;
 }
@@ -181,10 +189,11 @@ header {
     height: 850px;
     top: 55px;
     position:relative;
+    background-color: var(--negro);
 }
 
 .imgPortada {
-    background-color: antiquewhite;
+    background-color: var(--gris);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -195,7 +204,7 @@ header {
     position: absolute;
     width: 600px;
     height: 500px;
-    top: 70px;
+    top: 80px;
     /* margin: auto; */
     /* no me funciona el margin auto */
     margin-left: 120px;
@@ -203,7 +212,7 @@ header {
 
 .contenedorInfo h2 {
     font-size: 25px;
-    color: azure;
+    color: var(--blanco);
     margin-bottom: 20px;
     letter-spacing: 2px;
 
@@ -213,21 +222,181 @@ header {
     font-size: 45px;
     margin-bottom: 30px;
     letter-spacing: 2px;
-    color: azure;
+    color: var(--blanco);
 }
 
 .contenedorInfo p {
     font-size: 20px;
-    color: azure;
+    color: var(--blanco);
     letter-spacing: 1px;
 }
 
 /* -------cuerpo--------- */
 
-.card1 {
+.container-cuerpo {
     /* background-color: red; */
     width: 1280px;
-    top: 100px;
+    margin: auto;
+    position: relative;
+    top: 85px;
+}
+
+.card1 {
+    /* background-color: aquamarine; */
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.img-card1 {
+    display: flex;
+    border-radius: 20px;
+    justify-content: flex-start;
+    height: 500px;
+    width: 600px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.cont-card1 {
+    /* background-color: #F7F7F7; */
+    width: 500px;
+    height: 300px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.antetitulo-card1 {
+    color: var(--colorado);
+    font-size: 14px;
+    letter-spacing: 1.25;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.tit-card1 {
+    color: var(--negro);
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.parr-card1 {
+    color: var(--negro);
+    font-size: 20px;
+}
+
+.logo-leerMas1 {
+    /* background-color: bisque; */
+    position: absolute;
+    top: 450px;
+    margin-left: 620px;
+    cursor: pointer;
+}
+
+.logo-leerMas1 a {
+    /* background-color: #EA2134; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--negro);
+    height: 50px;
+}
+
+.logo-leerMas1 a i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.logo-leerMas1 a h2 {
+    font-size: 20px;
+}
+ 
+.card2 {
+    /* background-color: gold; */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+}
+
+.img-card2 {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 20px;
+    height: 500px;
+    width: 900px;
+    object-fit: cover;
+    cursor: pointer;  
+}
+
+.cont-card2 {
+    /* background-color: #F7F7F7; */
+    display: flex;
+    width: 880px;
+    height: 300px;
+    margin-left: 50px;
+    cursor: pointer;   
+}
+
+.antetitulo-card2 {
+    color: var(--colorado);
+    font-size: 14px;
+    letter-spacing: 1.25;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.tit-card2 {
+    color: var(--negro);
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.parr-card2 {
+    color: var(--negro);
+    font-size: 18px;
+}
+
+.logo-leerMas2 {
+    /* background-color: bisque; */
+    position: absolute;
+    top: 450px;
+    margin-left: 52px;
+    cursor: pointer;
+}
+
+.logo-leerMas2 a {
+    /* background-color: #EA2134; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--negro);
+    height: 50px;
+}
+
+.logo-leerMas2 a i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.logo-leerMas2 a h2 {
+    font-size: 20px;
+}
+
+
+
+/* .container-cuerpo {
+    background-color: red;
+    width: 1280px;
+    margin: auto;
+    top: 5000px;
+}
+
+.card1 {
+    background-color: var(--colorado);
+    width: 1280px;
+    top: 120px;
 
     display: flex;
     position: relative;
@@ -238,7 +407,7 @@ header {
 }
 
 .imgNota {
-    background-color: antiquewhite;
+    background-color: var(--gris);
     background-image: url(./Imagenes/jota.png);
     height: 500px;
     width: 400px;
@@ -252,16 +421,16 @@ header {
 
 .notaContenido {
     /* background-color: aquamarine; */
-    position: absolute;
+    /* position: absolute;
     left: 35%;
-    top: 0%;
+    top: 100%;
     width: 500px;
     height: 225px;
     cursor: pointer;
 }
 
 .clase {
-    color: red;
+    color: var(--colorado);
     font-size: 14px;
     letter-spacing: 1.25;
     font-weight: lighter;
@@ -269,17 +438,27 @@ header {
 }
 
 .titEntrevista {
-    color: black;
+    color: var(--negro);
     font-size: 60px;
     margin-bottom: 10px;
 }
 
 .parEntrevista {
-    color: black
+    color: var(--negro)
+}
+
+.entreNota{
+    width: 1280px;
+    height: 1px;
+    border: none;
+    background: var(--gris);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .card2 {
-    background-color: red;
+    background-color: var(--colorado);
     width: 1280px;
     top: 660px;
 
@@ -291,7 +470,7 @@ header {
 }
 
 .imgNota2 {
-    background-color: antiquewhite;
+    background-color: var(--gris);
     background-image: url(./Imagenes/guia.jpg);
     height: 400px;
     width: 700px;
@@ -304,9 +483,9 @@ header {
     cursor: pointer;
 }
 
-.notaContenido2 {
+.notaContenido2 { */
     /* background-color: aquamarine; */
-    position: absolute;
+    /* position: absolute;
     left: 0%;
     top: 0%;
     width: 500px;
@@ -315,7 +494,7 @@ header {
 }
 
 .clase2 {
-    color: red;
+    color: var(--colorado);
     font-size: 14px;
     letter-spacing: 1.25;
     font-weight: lighter;
@@ -324,19 +503,20 @@ header {
 }
 
 .titEntrevista2 {
-    color: black;
+    color: var(--negro);
     font-size: 60px;
     margin-bottom: 10px;
 }
 
 .parEntrevista2 {
-    color: black
+    color: var(--negro);
 }
 
 .entreNota {
-    color: gray;
+    color: var(--gris);
     
-}
+}  */
+
 
 
 /* -------pie de pagina--------- */
@@ -344,16 +524,64 @@ header {
 .container-footer {
     width: 100%;
     padding: 40px 0;
-    background: darkslategray;
-    margin-top: 1100px;
+    background: var(--negro);
+    margin-top: 115px;
+}   
+
+
+.container-footer footer {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.logo-footer {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    
+}
 
+.logo-footer h2 {
+    color: var(--blanco);
+    font-size: 30px;
+}
 
+.año h3 {
+    font-size: 12px;
+    color: var(--gris);
+}
 
+.redes-footer {
+    display: flex;
+    justify-content: center;
+}
 
-/* -------responsive--------- */
-S
+.icono-redes-footer {
+    font-size: 30px;
+    margin: 5px;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-footer hr {
+    border: none;
+    width: 1280px;
+    height: 1px;
+    background: var(--blanco);
+    margin: auto;
+}
+
+/* -------responsive design --------- */
+
 #icon-menu {
     /* background-color: red; */
     width: 50px;
@@ -372,6 +600,150 @@ S
 }
 
 #icon-menu:hover {
-    background-color: whitesmoke;
-    border: 1px solid black;
+    background-color: var(--gris);
+    border-radius: 30px;
 }
+
+@media (max-width: 1220px) {
+    .barraNav,
+    .contenedorInfo,
+    .container-cuerpo,
+    .container-footer hr,
+    .container-footer footer {
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .container-cuerpo
+     {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-cuerpo
+     {
+        width: 768px;
+        height: 1900px;
+        flex-direction: column;
+        background-color: aqua;
+    }
+}
+
+@media (max-width: 768px) {
+    .card1
+     {
+        position:absolute;
+        left: 0%;
+        width: 768px;
+        height: 920px;
+        flex-direction: column;
+        background-color: gold;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .img-card1
+     {
+        position:absolute;
+        left: 2%;
+        width: 500px;
+        height: 600px;
+        flex-direction: column;
+        background-color: gold;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .cont-card1
+     {
+       background-color: #F7F7F7;
+        position: absolute;
+        width: 720px;
+        height: 250px;
+        left: 2px;
+        top: 610px;
+        cursor: pointer;
+            
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-leerMas1
+     {
+         background-color: #EA2134;
+        /* position: absolute; */
+        top: 860px;
+        right: 78%;
+        cursor: pointer; 
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-leerMas1 a i
+     {  
+        top: 860px;
+        font-size: 30px;
+        margin-right: 10px;
+        color: #151C1A;
+
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .card2
+     {
+        flex-direction: column;
+        width: 768px;
+        height: 920px;
+        margin-top: 950px;
+        background-color: #EA2134;
+        position: absolute;
+        left: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-card2
+     {
+        position: absolute;
+        left:0px;
+        border-radius: 20px;
+        height: 500px;
+        width: 600px;
+        object-fit: cover;
+        cursor: pointer;  
+    }
+}
+
+@media (max-width: 768px) {
+    .cont-card2
+     {
+        position: absolute;
+        left:2px;
+        height: 250px;
+        width: 720px;
+        top: 600px;
+        cursor: pointer;  
+    }
+}
+
+
+
+
+
+
+
+
+
