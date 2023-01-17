@@ -17,10 +17,15 @@
 
                 <div class="barraNav">
                     <nav class="navegacion">
-                        <ul class="lista">
+                        <ul class="home">
                             <li>
-                                <a class="home" href="index.html"><img src="imagenes/Home2.png" alt="Home"></a>
+                                <a class="btn-home" href="index.html"><img src="imagenes/Home2.png" alt="Home"></a>
                             </li>
+                        </ul>
+                        <ul class="lista" id="mostrarMenu">
+                            <!-- <li>
+                                <a class="home" href="index.html"><img src="imagenes/Home2.png" alt="Home"></a>
+                            </li> -->
                             <li>
                                 <a class="btn estilos" href="estilos.html">Estilos
                                 </a>
@@ -30,15 +35,15 @@
                             </li>
                         </ul>
                     
-                        <!-- 
+                        
                         <div class="iconoLupa" id="ctn-icon-search">
                             <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
-                        </div> -->
+                        </div>
                         <!-- agrego id para llamarlos por js -->
                     </nav>
                 </div>
 
-                <div id="icon-menu">
+                <div id="iconMenu">
                     <i class="fa-solid fa-bars"></i>
 
                 </div>
@@ -46,7 +51,7 @@
             </header>
         </div>
 
-        <!-- <div class="ctn-barraBuscar" id="ctn-bars-search">
+        <div class="ctn-barraBuscar" id="ctn-bars-search">
             <input type="text" id="inputSearch" placeholder="Buscar">
         </div>
 
@@ -63,142 +68,109 @@
             <li>
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Ornamental</a>
             </li>
-        </ul> -->
+        </ul>
 
+        <div class="container-all" id="containerContent">
+            <!-- -------imagen portada--------- -->
 
-    <!-- -------imagen portada--------- -->
-
-        <div class="portada">
-                <img class="imgPortada" src="Imagenes/tatuaje-2.jpg" alt="Cuerpo con tatuajes" width="100%">
-                <div class="contenedorInfo">
-                    <h2>
-                        TATTOOTT
-                    </h2>
-                    <h1>
-                        CONOCE TODO SOBRE EL TATTOO
-                    </h1>
-                    <p>
-                        Porque tener un tattoo es llevar una pieza artistica en tu piel
-                    </p>
-                </div>
-        </div>
-
-        <!-- -------cuerpo--------- -->  
-
-        <div class="container-cuerpo"> 
-
-            <div class="card1">
-
-                <div class="img-card1">
-                    <a href="card1.html">
-                        <img class="img-card1" src="./Imagenes/jota.png" alt="Jota Tattooer">
-                    </a>
-                </div>
-                <div class="cont-card1">
-                    <a href="card1.html">
-                        <h3 class="antetitulo-card1">TATTOO ARTIST</h3>
-                        <h1 class="tit-card1">Entrevista con Jota Tattoer</h1>
-                        <p class="parr-card1">Una interesante nota realizada por los chicos de Whoistradi al tatuador de blackwork en Barcelona.
+            <div class="portada">
+                    <img class="imgPortada" src="Imagenes/tatuaje-2.jpg" alt="Cuerpo con tatuajes" width="100%">
+                    <div class="contenedorInfo">
+                        <h2>
+                            TATTOOTT
+                        </h2>
+                        <h1>
+                            CONOCE TODO SOBRE EL TATTOO
+                        </h1>
+                        <p>
+                            Porque tener un tattoo es llevar una pieza artistica en tu piel
                         </p>
-                    </a>
-                </div>
-                <div class="logo-leerMas1">
-                    <a href="card1.html">
-                        <i class="fa-solid fa-circle-plus"></i>
-                        <h2>Leer mas</h2>
-                    </a>  
-                </div>
-
+                    </div>
             </div>
 
-            <div class="card2">
+            <!-- -------cuerpo--------- -->  
 
-                <div class="logo-leerMas2">
-                    <a href="#">
-                        <i class="fa-solid fa-circle-plus"></i>
-                        <h2>Leer mas</h2>
-                    </a>                   
-                </div>
-                <div class="cont-card2">
-                    <a href="#">
-                        <h3 class="antetitulo-card2">GUIA</h3>
-                        <h1 class="tit-card2">Antes de tu cita: Como prepararte de manerera ...</h1>
-                        <p class="parr-card2">Te contamos como prepararte de manera correcta para tu proxima cita con tu tatuador para que esta sea una buena experiencia.
-                        </p>
-                    </a>
-                </div>
-                <div class="img-card2">
-                    <a href="#">
-                        <img class="img-card1" src="./Imagenes/guia.jpg" alt="cliente siedo tatuado" width="900px">
-                    </a>
+            <div class="container-cuerpo"> 
+
+                <div class="card1">
+
+                    <div class="img-card1">
+                        <a href="card1.html">
+                            <img class="img-card1" src="./Imagenes/jota.png" alt="Jota Tattooer">
+                        </a>
+                    </div>
+                    <div class="cont-card1">
+                        <a href="card1.html">
+                            <h3 class="antetitulo-card1">TATTOO ARTIST</h3>
+                            <h1 class="tit-card1">Entrevista con Jota Tattoer</h1>
+                            <p class="parr-card1">Una interesante nota realizada por los chicos de Whoistradi al tatuador de blackwork en Barcelona.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="logo-leerMas1">
+                        <a href="card1.html">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>  
+                    </div>
+
                 </div>
 
-            </div>
+                <div class="card2">
 
-        </div> 
+                    <div class="logo-leerMas2">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>                   
+                    </div>
+                    <div class="cont-card2">
+                        <a href="#">
+                            <h3 class="antetitulo-card2">GUIA</h3>
+                            <h1 class="tit-card2">Antes de tu cita: Como prepararte de manerera ...</h1>
+                            <p class="parr-card2">Te contamos como prepararte de manera correcta para tu proxima cita con tu tatuador para que esta sea una buena experiencia.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="img-card2">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/guia.jpg" alt="cliente siedo tatuado" width="900px">
+                        </a>
+                    </div>
 
-           <!-- <div class="card1">
-                <div class="nota1">
-                    <a class="imgNota" href="card1.html">
-                    </a>
-                    <a class="notaContenido" href="card1.html">
-                        <h3 class="clase">TATTOO ARTIST</h3>
-                        <h1 class="titEntrevista">Entrevista con Jota Tattoer</h1>
-                        <p class="parEntrevista">Una interesante nota realizada por los chicos de Whoistradi al tatuador de blackwork en Barcelona.
-                        </p>
-                    </a>
                 </div>
+
+            </div> 
+
+            <!-- -------pie de pagina--------- --> 
+
+            <div class="container-footer">
+                <hr>
+                <footer>
+                    <div class="logo-footer">
+                        <h2>TATTOOTT</h2>
+                    </div>
+
+                    <div class="año">
+                        <h3>
+                            @ 2023 Tattoott 
+                        </h3>
+                    </div>
+
+                    <div class="redes-footer">
+                        <a class="icono-redes-footer" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="icono-redes-footer" href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a class="icono-redes-footer" href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                    </div>
+
+                </footer>
                 
             </div>
 
-            <hr class="entreNota">
-
-            <div class="card2">
-                <div class="nota2">
-                    <a class="imgNota2" href="#"></a>
-                    <a class="notaContenido2" href="#">
-                        <h3 class="clase2">GUIA</h3>
-                        <h1 class="titEntrevista2">Antes de tu cita: Como prepararte de manerera ...</h1>
-                        <p class="parEntrevista2">Te contamos como prepararte de manera correcta para tu proxima cita con tu tatuado para que esta sea una buena experiencia.
-                        </p>
-                    </a>
-                </div>
-            </div> -->
-         
-
-         <!-- -------pie de pagina--------- --> 
-
-        <div class="container-footer">
-            <hr>
-            <footer>
-                <div class="logo-footer">
-                    <h2>TATTOOTT</h2>
-                </div>
-
-                <div class="año">
-                    <h3>
-                        @ 2023 Tattoott 
-                    </h3>
-                </div>
-
-                <div class="redes-footer">
-                    <a class="icono-redes-footer" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="icono-redes-footer" href="#"><i class="fa-brands fa-pinterest"></i></a>
-                    <a class="icono-redes-footer" href="#"><i class="fa-brands fa-youtube"></i></a>
-
-                </div>
-
-            </footer>
-            
-         </div>
+        </div>
         
-        
-
-
     
-
-
-
     <script src="script.js"></script>
 </body>
 </html>

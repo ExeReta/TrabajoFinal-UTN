@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -26,7 +27,7 @@ body {
     left: 0;
     width: 100%;
     height: 50px;
-    z-index: 2;
+    z-index: 11;
     background: var(--blanco);
     /* background-color: brown; */
 }
@@ -40,6 +41,8 @@ body {
     position: relative;
     align-items: center;
 }
+
+
 
 .navegacion {
     /* background-color: aquamarine; */
@@ -62,7 +65,6 @@ body {
 
 .lista li {
     display: list-item;
-    font-family:Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: medium;
     letter-spacing: 1.25px;
@@ -107,6 +109,7 @@ body {
 .home {
     /* background-color: blue; */
    margin-right: 5px;
+   list-style: none;
 }
 
 .lista a.focus {
@@ -115,7 +118,7 @@ body {
 
 /* -------Buscador--------- */
 
-.iconoLupa {
+#ctn-icon-search {
     /* background-color: red; */
     display: flex;
     position: absolute;
@@ -127,58 +130,61 @@ body {
 
 }
 
-.iconoLupa i{
+#ctn-icon-search i{
     font-size: 15px;
     color: var(--negro);
     cursor: pointer;
     padding: 15px 25px;
 }
 
-.ctn-barraBuscar {
+#ctn-bars-search {
     position: fixed;
     /* position fixed para q quede fija */
-    top: 80px;
+    top: -35px;
     width: 100%;
     background: white;
     padding: 20px;
     z-index: 10;
     /* el z index hace q el buscador este por encima de todo */
+    transition: all 600ms;
 }
 
-.ctn-barraBuscar input {
+#ctn-bars-search input {
     /* display: block; */
     width: 1280px;
-    margin: 0px;
+    margin-left: 110px;
     padding: 10px;
     font-size: 18px;
     outline: 0; 
     /* el outline es para q no se marque con un recuadro negro la barra buscadora cunado aprieto para escribir */
 }
 
-.box-search {
+#boxSearch {
     position: fixed;
     margin: 0px;
-    top: 165px;
-    width: 1280px;
+    top: 130px;
+    width: 100%;
     background: white;
     z-index: 9;
     list-style-type: none;
+    display: none;
 }
 
-.box-search li a{
+#boxSearch li a{
     display: block;
     /* hago display block para que cada a se vea como un bloque, cada una con su margen */
     width: 1280px;
+    margin-left: 130px;
     color: darkslategray;
     padding: 10px;
 
 }
 
-.box-search li a i{
+#boxSearch li a i{
     margin-right: 10px;
 }
 
-.box-search li a:hover{
+#boxSearch li a:hover{
     background-color: whitesmoke;
 }
 
@@ -384,141 +390,6 @@ body {
     font-size: 20px;
 }
 
-
-
-/* .container-cuerpo {
-    background-color: red;
-    width: 1280px;
-    margin: auto;
-    top: 5000px;
-}
-
-.card1 {
-    background-color: var(--colorado);
-    width: 1280px;
-    top: 120px;
-
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-
-}
-
-.imgNota {
-    background-color: var(--gris);
-    background-image: url(./Imagenes/jota.png);
-    height: 500px;
-    width: 400px;
-    background-position: center;
-    border-radius: 15px;
-    display: flex;
-    position: absolute;
-    left: 0%;
-    cursor: pointer;
-}
-
-.notaContenido {
-    /* background-color: aquamarine; */
-    /* position: absolute;
-    left: 35%;
-    top: 100%;
-    width: 500px;
-    height: 225px;
-    cursor: pointer;
-}
-
-.clase {
-    color: var(--colorado);
-    font-size: 14px;
-    letter-spacing: 1.25;
-    font-weight: lighter;
-    margin-bottom: 10px;
-}
-
-.titEntrevista {
-    color: var(--negro);
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-
-.parEntrevista {
-    color: var(--negro)
-}
-
-.entreNota{
-    width: 1280px;
-    height: 1px;
-    border: none;
-    background: var(--gris);
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.card2 {
-    background-color: var(--colorado);
-    width: 1280px;
-    top: 660px;
-
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.imgNota2 {
-    background-color: var(--gris);
-    background-image: url(./Imagenes/guia.jpg);
-    height: 400px;
-    width: 700px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    display: flex;
-    position: absolute;
-    right: 0%;
-    cursor: pointer;
-}
-
-.notaContenido2 { */
-    /* background-color: aquamarine; */
-    /* position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 500px;
-    height: 225px;
-    cursor: pointer;
-}
-
-.clase2 {
-    color: var(--colorado);
-    font-size: 14px;
-    letter-spacing: 1.25;
-    font-weight: lighter;
-    margin-bottom: 10px;
-    right: 0%;
-}
-
-.titEntrevista2 {
-    color: var(--negro);
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-
-.parEntrevista2 {
-    color: var(--negro);
-}
-
-.entreNota {
-    color: var(--gris);
-    
-}  */
-
-
-
 /* -------pie de pagina--------- */
 
 .container-footer {
@@ -582,7 +453,7 @@ body {
 
 /* -------responsive design --------- */
 
-#icon-menu {
+#iconMenu {
     /* background-color: red; */
     width: 50px;
     height: 50px;
@@ -591,17 +462,10 @@ body {
     top: 5px;
     font-size: 20px;
     cursor: pointer;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     border-radius: 4px;
     display: none;
-    
-}
-
-#icon-menu:hover {
-    background-color: var(--gris);
-    border-radius: 30px;
 }
 
 @media (max-width: 1220px) {
@@ -613,70 +477,59 @@ body {
         max-width: 1000px;
         padding: 0 20px;
     }
-}
 
-@media (max-width: 1020px) {
-    .container-cuerpo
-     {
+    .container-cuerpo {
         width: 100%;
         margin: auto;
     }
+
 }
 
 @media (max-width: 768px) {
-    .container-cuerpo
-     {
+
+ 
+    .container-all {
         width: 768px;
-        height: 1900px;
-        flex-direction: column;
-        background-color: aqua;
     }
-}
 
-@media (max-width: 768px) {
-    .card1
-     {
+    .container-cuerpo {
+        width: 768px;
+        height: 1860px;
+        flex-direction: column;
+        /* background-color: aqua; */
+        overflow: hidden;
+    }
+
+    .card1 {
         position:absolute;
         left: 0%;
         width: 768px;
         height: 920px;
         flex-direction: column;
-        background-color: gold;
-        
+        background-color: #f1f1f1;
     }
-}
 
-@media (max-width: 768px) {
-    .img-card1
-     {
+    .img-card1 {
         position:absolute;
         left: 2%;
         width: 500px;
         height: 600px;
         flex-direction: column;
-        background-color: gold;
-        
+        /* background-color: violet;  */   
     }
-}
 
-@media (max-width: 768px) {
-    .cont-card1
-     {
-       background-color: #F7F7F7;
+    .cont-card1 {
+       /* background-color: #F7F7F7; */
         position: absolute;
         width: 720px;
         height: 250px;
         left: 2px;
         top: 610px;
-        cursor: pointer;
-            
+        cursor: pointer;   
     }
-}
 
-@media (max-width: 768px) {
-    .logo-leerMas1
-     {
-         background-color: #EA2134;
+    .logo-leerMas1 {
+        /* background-color: #EA2134; */
         /* position: absolute; */
         top: 860px;
         right: 78%;
@@ -684,39 +537,27 @@ body {
         width: 150px;
         display: flex;
         justify-content: space-between;
-        
     }
-}
 
-@media (max-width: 768px) {
-    .logo-leerMas1 a i
-     {  
-        top: 860px;
-        font-size: 30px;
-        margin-right: 10px;
-        color: #151C1A;
-
-    }
-}
+    .logo-leerMas1 a i {  
+       top: 860px;
+       font-size: 30px;
+       margin-right: 10px;
+       color: var(--negro);
+   }
 
 
+   .card2 {
+      flex-direction: column;
+      width: 768px;
+      height: 920px;
+      margin-top: 950px;
+        background-color:#f1f1f1;
+      position: absolute;
+      left: 0%;
+  }
 
-@media (max-width: 768px) {
-    .card2
-     {
-        flex-direction: column;
-        width: 768px;
-        height: 920px;
-        margin-top: 950px;
-        background-color: #EA2134;
-        position: absolute;
-        left: 0%;
-    }
-}
-
-@media (max-width: 768px) {
-    .img-card2
-     {
+  .img-card2 {
         position: absolute;
         left:0px;
         border-radius: 20px;
@@ -725,20 +566,326 @@ body {
         object-fit: cover;
         cursor: pointer;  
     }
+
+    .cont-card2 {
+       /* background-color: #F7F7F7; */
+       /* position: absolute; */
+       margin-left: 15px;
+       height: 250px;
+       width: 720px;
+       margin-top: 600px;
+       cursor: pointer;  
+   }
+
+   .logo-leerMas2 {
+        /* background-color: #EA2134; */
+        /* position: absolute; */
+        top: 860px;
+        right: 78%;
+        cursor: pointer; 
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .barraNav {
+        display: flex;
+        justify-content: space-between;
+        width: 768px;
+        margin: auto;
+        /* position: relative; */
+        align-items: center;
+    }
+
+    .contenedorInfo {
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        top: 30px;
+        /* margin: auto; */
+        /* no me funciona el margin auto */
+        margin-left: 20px;
+        overflow: hidden;   
+    }
+
+    .portada {
+       width: 768px;
+       height: 500px;
+       top: 55px;
+       position:relative;
+       background-color: var(--negro);
+       overflow: hidden;
+   }
+
+   .contenedorInfo h2 {
+        font-size: 15px;
+        
+    }
+
+    .contenedorInfo h1 {
+        font-size: 25px;
+        /* margin-bottom: 30px; */
+    }
+
+    .contenedorInfo p {
+        font-size: 15px;
+        /* margin-bottom: 30px; */
+    }
+
+    .lista {
+        transition: all 300ms;
+    }
+
+    .lista {
+        background: var(--blanco);
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        overflow: hidden;
+        box-shadow: 20px 0px 30px -30px var(--negro);
+        flex-direction: column;
+        transform: translateX(-250px);
+    }
+
+    .show-lateral {
+        width: 250px;
+        transform: translateX(0px);
+    }
+
+    .lista li {
+        padding: 30px;
+    }
+
+    .header-contenido{
+        max-width: 768px;
+    }
+
+    .btn {
+        font-size: 25px;
+        top: 20px;
+        /* padding: 20px; */
+    }
+
+    #iconMenu {
+        display: flex;
+    }
+
+    .container-footer footer {
+        width: 768px;
+    }
+
+    .container-footer hr {
+        width: 768px;
+    }
+
 }
 
-@media (max-width: 768px) {
-    .cont-card2
-     {
+@media (max-width: 380px) {
+    .container-all {
+        width: 380px;
+    }
+
+    .container-cuerpo {
+        width: 380px;
+        height: 1690px;
+        flex-direction: column;
+        /* background-color: aqua; */
+        overflow: hidden;
+    }
+
+    .card1 {
+        position:absolute;
+        left: 0%;
+        width: 380px;
+        height: 825px;
+        flex-direction: column;
+        background-color:#f1f1f1;  
+    }
+
+    .img-card1 {
+        position:absolute;
+        left: 2%;
+        width: 300px;
+        height: 500px;
+        flex-direction: column;
+        /* background-color: violet;  */
+    }
+
+    .cont-card1 {
+       /* background-color: #6a2121; */
         position: absolute;
-        left:2px;
-        height: 250px;
-        width: 720px;
-        top: 600px;
+        width: 300px;
+        height: 200px;
+        left: 2px;
+        top: 510px;
+        cursor: pointer;     
+    }
+
+    .tit-card1 {
+        font-size: 30px;
+    }
+
+    .logo-leerMas1 {
+        /* background-color: #EA2134; */
+        /* position: absolute; */
+        top: 760px;
+        right: 54%;
+        cursor: pointer; 
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-leerMas1 a i {  
+       top: 380px;
+       font-size: 30px;
+       margin-right: 10px;
+       color: var(--negro);
+   }
+
+   .card2 {
+      flex-direction: column;
+      width: 380px;
+      height: 825px;
+      margin-top: 850px;
+        background-color:#f1f1f1;
+      position: absolute;
+      left: 0%;
+  }
+
+
+  .img-card2 {
+        position: absolute;
+        left:0px;
+        border-radius: 20px;
+        height: 500px;
+        width: 600px;
+        object-fit: cover;
         cursor: pointer;  
     }
-}
 
+
+    .cont-card2 {
+       /* background-color: #F7F7F7; */
+       /* position: absolute; */
+       margin-left: 15px;
+       width: 300px;
+        height: 250px;
+       margin-top: 510px;
+       cursor: pointer;  
+   }
+
+   .tit-card2 {
+    font-size: 30px;
+   }
+
+   .logo-leerMas2 {
+        /* background-color: #EA2134; */
+        /* position: absolute; */
+        top: 770px;
+        right: 54%;
+        cursor: pointer; 
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .barraNav {
+        display: flex;
+        justify-content: space-between;
+        width: 380px;
+        margin: auto;
+        /* position: relative; */
+        align-items: center;
+    }
+
+    .contenedorInfo {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 30px;
+        /* margin: auto; */
+        /* no me funciona el margin auto */
+        margin-left: 20px;
+        overflow: hidden;
+    }
+
+    .portada {
+       width: 380px;
+       height: 300px;
+       top: 55px;
+       position:relative;
+       background-color: var(--negro);
+       overflow: hidden;
+   }
+
+   .contenedorInfo h2 {
+        font-size: 15px;
+    }
+
+    .contenedorInfo h1 {
+        font-size: 20px;
+        /* margin-bottom: 30px; */
+    }
+
+    .contenedorInfo p {
+        font-size: 15px;
+        display: none;
+        /* margin-bottom: 30px; */
+    }
+
+    .lista {
+        transition: all 300ms;
+    }
+
+    .lista {
+        background: var(--blanco);
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        overflow: hidden;
+        box-shadow: 20px 0px 30px -30px var(--negro);
+        flex-direction: column;
+        transform: translateX(-250px);
+    }
+
+    .show-lateral {
+        width: 200px;
+        transform: translateX(0px);
+    }
+
+    .lista li {
+        padding: 30px;
+    }
+
+    .header-contenido {
+        max-width: 380px;
+    }
+
+    .btn {
+        font-size: 20px;
+        top: 20px;
+        /* padding: 20px; */
+    }
+
+    #iconMenu {
+        display: flex;
+    }
+
+    .container-footer footer {
+        width: 380px;
+        flex-direction: column;
+        height: 90px;
+    }
+
+    .container-footer hr {
+        width: 380px;
+    }
+}
 
 
 
