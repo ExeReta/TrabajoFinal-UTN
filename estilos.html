@@ -3,11 +3,515 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no,  initial-scale=1.0, max-scale=1.0, min-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/7a085cca4b.js" crossorigin="anonymous"></script>
     <title>Descubrí los estilos de tatuajes</title>
 </head>
 <body>
+    <!-- -------BARRA DE NAV--------- -->
+       
+    <div class="header-contenido">
+        <header>
+
+            <div class="barraNav">
+                <nav class="navegacion">
+                    <ul class="home">
+                        <li>
+                            <a class="btn-home" href="index.html"><img src="imagenes/Home2.png" alt="Home"></a>
+                        </li>
+                    </ul>
+                    <ul class="lista" id="mostrarMenu">
+                        <!-- <li>
+                            <a class="home" href="index.html"><img src="imagenes/Home2.png" alt="Home"></a>
+                        </li> -->
+                        <li>
+                            <a class="btn estilos" href="estilos.html">Estilos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn tattoos" href="tattoos.html">Tattoos</a>
+                        </li>
+                    </ul>
+                
+                    
+                    <div class="iconoLupa" id="ctn-icon-search">
+                        <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+                    </div>
+                    <!-- agrego id para llamarlos por js -->
+                </nav>
+            </div>
+
+            <div id="iconMenu">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </header>
+    </div>
+
+    <div class="ctn-barraBuscar" id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="Buscar">
+    </div>
+
+    <ul class="box-search" id="boxSearch">
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Estilos</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Tradicional</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Blackwork</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Ornamental</a>
+        </li>
+    </ul>
+
+    <div class="container-all" id="containerContent">
+
+    <div class="containerAll">
+        <!-- -------cuerpo--------- -->  
+
+        <div class="container-cuerpo"> 
+
+                <div class="card1">
+
+                    <div class="img-card1">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/blackwork.png" alt="gakkin tattoo">
+                        </a>
+                        <h2>@gakkinx</h2>
+                    </div>
+                    <div class="cont-card1">
+                        <a href="#">
+                            <h3 class="antetitulo-card1">STYLE GUIDE</h3>
+                            <h1 class="tit-card1">BLACKWORK</h1>
+                            <p class="parr-card1">El Blackwork es el termino general que se le da a los tattos que son realizados exclusivamente con tinta negra.
+                                Estos tattos incluyen contornos gruesos y grandes areas enteras pintadas de negro, yuxtapuestas por espacios en negativo o "skin-breaks" de manera intencional.
+                                Cualquier tattoo realizado solo con tinta negra, sin agregado de colores o sombras grises puede clasificarse como Blackwork.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="logo-leerMas1">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>  
+                    </div>
+
+                </div>
+
+                <div class="card2">
+
+                    <div class="logo-leerMas2">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>                   
+                    </div>
+                    <div class="cont-card2">
+                        <a href="#">
+                            <h3 class="antetitulo-card2">STYLE GUIDE</h3>
+                            <h1 class="tit-card2">TRADICIONAL</h1>
+                            <p class="parr-card2">El estilo tradicional, tambien conocido como el "Tradicional Americano" u "OldSchool" es uno de los estilos mas clasicos, reconocible y que mas perdura en el tiempo. Durante sus inicios, sus diseños incluian simbolos del patriotismo americano, nautica y militar en dos dimenciones. En las ultimas decadas los diseños han ido evolucionando y progresando lo que llevo a una mayor exploración de estos. Cualquier diseño puede ser realizado en el estilo Tradicional. 
+                            Estos tattoos se caracterizan por llevar lineas gruesas, firmes y sin modulación. Con colores primarios sólidos, rojos, amarillos, verdes, azules y mucho negro.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="img-card2">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/tradicional.jpg" alt="anna meliani tattoo" width="900px">
+                        </a>
+                        <h2>@annaxmeliani</h2>
+                    </div>
+
+                </div>
+
+            
+                <div class="card1">
+
+                    <div class="img-card1">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/japones.webp" alt="henning royal tattoo">
+                            <h2>@henning_royaltattoo</h2>
+                        </a>
+                    </div>
+                    <div class="cont-card1">
+                        <a href="#">
+                            <h3 class="antetitulo-card1">STYLE GUIDE</h3>
+                            <h1 class="tit-card1">JAPONES</h1>
+                            <p class="parr-card1">El estilo japones es facilmente reconocible por sus característicos diseños fuerte y rudo aunque las figuras encierran un estilo grácil y delicado. Hay un gran rango de subtemas a elegir en este estilo, pero los más conocido son diseños referenciado de pinturas del ukiyo-e en Japon. Hoy en día el estilo Japones es muy elegido por su belleza, simbolismo y su destacada composicion floral.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="logo-leerMas1">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>  
+                    </div>
+
+                </div>
+            
+
+                <div class="card2">
+
+                    <div class="logo-leerMas2">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>                   
+                    </div>
+                    <div class="cont-card2">
+                        <a href="#">
+                            <h3 class="antetitulo-card2">STYLE GUIDE</h3>
+                            <h1 class="tit-card2">REALISMO</h1>
+                            <p class="parr-card2">El realismo esta basado en temas u objetos de la vida real y pueden ser identificados fácilmente por su apariencia realista. Los tatoos de este estilo seran nitidos y limpios como una fotografía trasladada a la piel. Hay muchos sub-estilos siendo los mas populares el micro-realismo y surrealismo.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="img-card2">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/realismo.png" alt="Alena Shutko tattoo" width="900px">
+                        </a>
+                        <h2>@lekatattoo</h2>
+                    </div>
+
+                </div>
+
+                <div class="card1">
+
+                    <div class="img-card1">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/ornamental2.webp" alt="Dino Vallely tattoo">
+                            <h2>@dino_vallely</h2>
+                        </a>
+                    </div>
+                    <div class="cont-card1">
+                        <a href="#">
+                            <h3 class="antetitulo-card1">STYLE GUIDE</h3>
+                            <h1 class="tit-card1">ORNAMENTAL</h1>
+                            <p class="parr-card1">Si bien en los ultimos años los diseños ornamentales se han entrecruzado culturalmente, muchos de sus orígenes se encuentran en las antiguas culturas y tradiciones tribales. Este estilo generalmente utiliza sobras negras y/o puntillismo para darle a vida y simetria a sus diseños. Trabajo en patrones, mehndi y estilos decorativos se encuentran dentro de esta categoría.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="logo-leerMas1">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>  
+                    </div>
+
+                </div>
+
+                <div class="card2">
+
+                    <div class="logo-leerMas2">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>                   
+                    </div>
+                    <div class="cont-card2">
+                        <a href="#">
+                            <h3 class="antetitulo-card2">STYLE GUIDE</h3>
+                            <h1 class="tit-card2">WATERCOLOR</h1>
+                            <p class="parr-card2">Con raices en las tecnicas artisticas mas delicad y antiguas,utilizadas por los artistas más renombrados el Watercolor hace uso y continúa esta tradición mayormente vista en los museos de arte. Ya sea en un estilo abstracto, botanico, representaciones naturales, freehand o una representación de pinturas famosas este estilo se caracteriza por el uso de colores y tecnica fluida.  
+                            </p>
+                        </a>
+                    </div>
+                    <div class="img-card2">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/watercolor2.png" alt="zihwa tattoo" width="900px">
+                            <h2>@zihwa_tattooer</h2>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="card1">
+
+                    <div class="img-card1">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/fineline.png" alt="tritoan_7th tattoo">
+                            <h2>@tritoan_7th</h2>
+                        </a>
+                    </div>
+                    <div class="cont-card1">
+                        <a href="#">
+                            <h3 class="antetitulo-card1">STYLE GUIDE</h3>
+                            <h1 class="tit-card1">FINE LINE</h1>
+                            <p class="parr-card1">El estilo "Fine line" se inclina mas por una ejecución de lineas prolijas, delicadas y finas a una exploración artistica. Botánica,minimalismo, ilustraciones y el chicano style son uno de los mas representativos de este género.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="logo-leerMas1">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>  
+                    </div>
+                </div>
+
+                <div class="card2">
+
+                    <div class="logo-leerMas2">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>                   
+                    </div>
+                    <div class="cont-card2">
+                        <a href="#">
+                            <h3 class="antetitulo-card2">STYLE GUIDE</h3>
+                            <h1 class="tit-card2">NEO TRADICIONAL</h1>
+                            <p class="parr-card2">Probablemente el estilo mas exhuberante y extravagante. Este género toma el clásico Tradicional Americano y lo lleva a un nivel más moderno y detallado. Es en el uso de los detalles, profundidades y la variedad de colores poco convencionales donde el Neo Tradicional se diferencia del Tradicional Americano. Son el Art Noveau y el Art Deco los diseños más elegidos para representar dicho estilo. 
+                            </p>
+                        </a>
+                    </div>
+                    <div class="img-card2">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/neotradicional.png" alt="imchrisgreen tattoo" width="900px">
+                            <h2>@imchrisgreen</h2>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="card1">
+
+                    <div class="img-card1">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/tribal2.png" alt="Sh.d tattoo">
+                            <h2>@sh.d.tattoo</h2>
+                        </a>
+                    </div>
+                    <div class="cont-card1">
+                        <a href="#">
+                            <h3 class="antetitulo-card1">STYLE GUIDE</h3>
+                            <h1 class="tit-card1">TRIBAL</h1>
+                            <p class="parr-card1">Con ejemplares de hace 5000 años encontrados en la momia Otzi el estilo Tribal es tal vez el más antiguo de todos. Sus diseños tienen origen en pinturas y marcas de tribus de diferentes culturas y clanes, siendo las que más influenciaron este género las polinesias, africanas y celta. Se caracterizan por de tinta negra plana sin sombreado alguno.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="logo-leerMas1">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>  
+                    </div>
+                </div>
+
+                <div class="card2">
+
+                    <div class="logo-leerMas2">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>                   
+                    </div>
+                    <div class="cont-card2">
+                        <a href="#">
+                            <h3 class="antetitulo-card2">STYLE GUIDE</h3>
+                            <h1 class="tit-card2">BLACKOUT</h1>
+                            <p class="parr-card2">El estilo que marca tendencias en los ultimos años. El origen de este género se debe a la necesidad de tatuarse por encima de otro tattoo. Este conciste en cubrir una zona del cuerpo toda de negro.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="img-card2">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/blakout.png" alt="black prada tattoo" width="900px">
+                            <h2>@black.prada</h2>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="card1">
+
+                    <div class="img-card1">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/ignorant.png" alt="mrprestontattoo tattoo">
+                            <h2>@mrprestontattoo</h2>
+                        </a>
+                    </div>
+                    <div class="cont-card1">
+                        <a href="#">
+                            <h3 class="antetitulo-card1">STYLE GUIDE</h3>
+                            <h1 class="tit-card1">IGNORANT</h1>
+                            <p class="parr-card1">El estilo ignorant es definido por su simpleza, y sus diseños tiopo sketch limitados solamente a lineas sin sombreado. Este género es facilmente reconocible por su apariencia "desprolija", lineas "imperfectas" y motivos pocos serios e ironicos. 
+                            </p>
+                        </a>
+                    </div>
+                    <div class="logo-leerMas1">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>  
+                    </div>
+                </div>
+
+                <div class="card2">
+
+                    <div class="logo-leerMas2">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>                   
+                    </div>
+                    <div class="cont-card2">
+                        <a href="#">
+                            <h3 class="antetitulo-card2">STYLE GUIDE</h3>
+                            <h1 class="tit-card2">NEW SCHOOL</h1>
+                            <p class="parr-card2">Tonos vividos, personajes rapidamente reconocibles y el concepto cartoon son algunas de las características que envuelven al New School tattoo. Fuertemente influenciado por los video juegos, cartoons, anime/manga, comics y grafitti. Como en el estilo Tradicional este género se caracteriza por lineas negras solidas que contornean el dibujo.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="img-card2">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/NewSchool.png" alt="steven compton tattoo" width="900px">
+                            <h2>@steven_compton</h2>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="card1">
+
+                    <div class="img-card1">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/neotribal2.jpg" alt="alex arnautov tattoo">
+                            <h2>@alex_arnautov</h2>
+                        </a>
+                    </div>
+                    <div class="cont-card1">
+                        <a href="#">
+                            <h3 class="antetitulo-card1">STYLE GUIDE</h3>
+                            <h1 class="tit-card1">NEO TRIBAL</h1>
+                            <p class="parr-card1">Este género toma al clasico estilo Tribal polinesio y lo lleva a un nivel más explorativo y anatómico. Realizados normalmente en tinta negra plana cubriendo grandes partes del cuerpo de este color con formas rectas, curvas o espirales.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="logo-leerMas1">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>  
+                    </div>
+                </div>
+
+                <div class="card2">
+
+                    <div class="logo-leerMas2">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>                   
+                    </div>
+                    <div class="cont-card2">
+                        <a href="#">
+                            <h3 class="antetitulo-card2">STYLE GUIDE</h3>
+                            <h1 class="tit-card2">BIO-MECANIO & ORGANICO</h1>
+                            <p class="parr-card2">Fuertemente influenciado por la ciencia ficción y el realismo el estilo biomecanico & biorganico combina elementos del mundo natural con sobrenaturales. El género biorganico utiliza elementos del mundo natural con la estrutura osea corporal y tejidos musculares descubiertos. Por otro lado el biomecanico utiliza partes de maquinarias, de acero para remplazar la estrucura osea.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="img-card2">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/bioorganico2.png" alt="jeremiahbarba tattoo" width="900px">
+                            <h2>@jeremiahbarba</h2>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="card1">
+
+                    <div class="img-card1">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/lettering.png" alt="maria sousa tattoo">
+                            <h2>@mariasousatattoo</h2>
+                        </a>
+                    </div>
+                    <div class="cont-card1">
+                        <a href="#">
+                            <h3 class="antetitulo-card1">STYLE GUIDE</h3>
+                            <h1 class="tit-card1">LETTERING</h1>
+                            <p class="parr-card1">Algunas veces las palabras, nombres o frases se vuelven tan significativas u obsesivas que muchas personas quieren llevarlas en su piel para el resto de sus vidas. Uno de los estilos de tattoos más personales y significativo que hay.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="logo-leerMas1">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>  
+                    </div>
+                </div>
+
+                <div class="card2">
+
+                    <div class="logo-leerMas2">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <h2>Leer mas</h2>
+                        </a>                   
+                    </div>
+                    <div class="cont-card2">
+                        <a href="#">
+                            <h3 class="antetitulo-card2">STYLE GUIDE</h3>
+                            <h1 class="tit-card2">TRASH POLKA</h1>
+                            <p class="parr-card2">Este estilo combina tres factores: imágenes realistas, letterings y layers artisticos referenciando al trash. Un género que genera odio o amor. Se caracteriza por tener una composición mezclando lo caótico con lo perfecto, manchas de sangre o goteos rojos, pinceladas de pintura y diseños geometricos.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="img-card2">
+                        <a href="#">
+                            <img class="img-card1" src="./Imagenes/trash polka.png" alt="buena vida tattoo" width="900px">
+                            <h2>@buenavistatattooclub</h2>
+                        </a>
+                    </div>
+
+                </div>
+
+
+        </div> 
+
+
+
+        <!-- -------pie de pagina--------- --> 
+
+        <div class="container-footer">
+            <hr>
+            <footer>
+                <div class="logo-footer">
+                    <h2>TATTOOTT</h2>
+                </div>
+
+                <div class="año">
+                    <h3>
+                        @ 2023 Tattoott 
+                    </h3>
+                </div>
+
+                <div class="redes-footer">
+                    <a class="icono-redes-footer" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="icono-redes-footer" href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a class="icono-redes-footer" href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+            </footer>
+            
+        </div>
+    </div>
+
+
     
+
+
+        <script src="script.js"></script>
 </body>
 </html>
