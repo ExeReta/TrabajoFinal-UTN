@@ -203,6 +203,8 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
+    object-fit: cover;
+    
 }
 
 .contenedorInfo {
@@ -216,49 +218,71 @@ body {
     margin-left: 120px;
 }
 
-.contenedorInfo h2 {
-    font-size: 25px;
-    color: var(--blanco);
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-
-}
-
 .contenedorInfo h1 {
     font-size: 45px;
     margin-bottom: 30px;
     letter-spacing: 2px;
+    margin-top: 70px;
     color: var(--blanco);
 }
 
-.contenedorInfo p {
-    font-size: 20px;
-    color: var(--blanco);
-    letter-spacing: 1px;
-}
+/* -------Cuerpo--------- */
 
-/* -------Gallery--------- */
-
-.gallery {
+.container-art {
     max-width: 1280px;
-    position: relative;
     margin: auto;
-    columns: 3 320px;
-    top: 80px;
+    position: relative;
+    margin-top: 80px;
     /* background-color: red; */
-    column-gap: 15px;
 
 }
 
-.gallery img {
-    max-width: 100%;
-    /* object-fit: cover; */
-    margin-bottom: 15px;
-    cursor: pointer;
+.cont-articulo {
+    display: flex;
 }
 
-.gallery img:hover {
-    filter: opacity(0.9);
+.cont-articulo p {
+    width: 500px;
+    margin-left: 110px;
+    margin-top: 100px;
+}
+
+.cont-video {
+    display: flex;
+    /* position: absolute; */
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.cont-map {
+    margin: auto;
+    margin-top: 40px;
+}
+
+.cont-map h1 {
+    margin-bottom: 20px;
+}
+
+.ubicacion {
+    display: flex;
+}
+
+.direccion {
+    width: 420px;
+
+}
+
+.direccion h2 {
+    margin-bottom: 20px;
+}
+
+.direccion a {
+    color: var(--negro);
+    font-weight: bold;
+}
+
+.ubicacion iframe {
+    margin-left: 100px;
 }
 
 /* -------pie de pagina--------- */
@@ -267,7 +291,7 @@ body {
     width: 100%;
     padding: 40px 0;
     background: var(--negro);
-    margin-top: 115px;
+    margin-top: 60px;
 }   
 
 
@@ -321,3 +345,5 @@ body {
     background: var(--blanco);
     margin: auto;
 }
+
+

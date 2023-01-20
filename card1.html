@@ -3,11 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no,  initial-scale=1.0, max-scale=1.0, min-scale=1.0">
+    <link rel="stylesheet" href="card1.css">
+    <script src="https://kit.fontawesome.com/7a085cca4b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Imagenes/favico.ico">
     <title>Entrevista Jota</title>
 </head>
 <body>
-    <h2>hola estas en entrevista jota</h2>
-    
+    <!-- -------BARRA DE NAV--------- -->
+       
+    <div class="header-contenido">
+        <header>
+
+            <div class="barraNav">
+                <nav class="navegacion">
+                    <ul class="home">
+                        <li>
+                            <a class="btn-home" href="index.html"><img src="imagenes/Home2.png" alt="Home"></a>
+                        </li>
+                    </ul>
+                    <ul class="lista" id="mostrarMenu">
+                        <!-- <li>
+                            <a class="home" href="index.html"><img src="imagenes/Home2.png" alt="Home"></a>
+                        </li> -->
+                        <li>
+                            <a class="btn estilos" href="estilos.html">Estilos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn tattoos" href="tattoos.html">Tattoos</a>
+                        </li>
+                    </ul>
+                
+                    
+                    <div class="iconoLupa" id="ctn-icon-search">
+                        <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+                    </div>
+                    <!-- agrego id para llamarlos por js -->
+                </nav>
+            </div>
+
+            <div id="iconMenu">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </header>
+    </div>
+
+    <div class="ctn-barraBuscar" id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="Buscar">
+    </div>
+
+    <ul class="box-search" id="boxSearch">
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Estilos</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Tradicional</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Blackwork</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Ornamental</a>
+        </li>
+    </ul>
+
+    <div class="container-all" id="containerContent">
+
+        <!-- -------imagen portada--------- -->
+
+        <div class="portada">
+            <img class="imgPortada" src="Imagenes/Card1/jota.png" alt="Cuerpo con tatuajes" width="100%">
+            <div class="contenedorInfo">
+                
+                <h1>
+                    JOTA TATTOOER
+                </h1>
+                
+            </div>
+        </div>
+
+        <!-- -------Cuerpo--------- -->
+
+        <div class="container-art">
+
+            <div class="cont-articulo">
+                <img src="imagenes/Card1/jota2.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa placeat illo blanditiis asperiores error doloremque facere quo id pariatur commodi, consectetur, ea impedit at voluptatibus officia quae inventore. Beatae.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ullam reprehenderit aut laboriosam saepe voluptate iure porro illum soluta quo magni amet, iusto, maiores sed quidem ad itaque, modi eaque!
+                </p>
+            </div>
+
+            <div class="cont-video">
+                <iframe width="720" height="480" src="https://www.youtube.com/embed/S3RHrshxQlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <div class="cont-map">
+                <h1>Donde encontrar a Jota</h1>
+
+                <div class="ubicacion">
+                    <div class="direccion">
+                    <h2>Carrer de Ferlandia, 32, 08001 Barcelona, España.</h2>
+                    <a href="https://www.instagram.com/explore/locations/250571689/siha-tattoo-bcn/?hl=es">Instagram.com</a>
+                    </div>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11974.587765908522!2d2.1649403!3d41.3817548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x626bec145c17a7ea!2sSiha%20Tattoo%20Barcelona!5e0!3m2!1ses-419!2sar!4v1674175193461!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- -------pie de pagina--------- --> 
+
+        <div class="container-footer">
+            <hr>
+            <footer>
+                <div class="logo-footer">
+                    <h2>TATTOOTT</h2>
+                </div>
+
+                <div class="año">
+                    <h3>
+                        @ 2023 Tattoott 
+                    </h3>
+                </div>
+
+                <div class="redes-footer">
+                    <a class="icono-redes-footer" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="icono-redes-footer" href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a class="icono-redes-footer" href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+            </footer>
+            
+        </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
