@@ -122,7 +122,7 @@ body {
     /* background-color: red; */
     display: flex;
     position: absolute;
-    width: 20px;
+    width: 40px;
     height: 100%;
     justify-content: center;
     align-items:center;
@@ -135,6 +135,7 @@ body {
     color: var(--negro);
     cursor: pointer;
     padding: 15px 25px;
+    /* background-color: #151C1A; */
 }
 
 #ctn-bars-search {
@@ -288,7 +289,7 @@ body {
 
 .parr-card1 {
     color: var(--negro);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .logo-leerMas1 {
@@ -451,7 +452,7 @@ body {
     margin: auto;
 }
 
-/* -------responsive design --------- */
+/* ------------------------------------- responsive design ----------------------------------------- */
 
 #iconMenu {
     /* background-color: red; */
@@ -485,18 +486,250 @@ body {
 
 }
 
-@media (max-width: 768px) {
+/* ---------------------------------------------------------------------------------------------- */
 
- 
+@media (max-width: 1000px) {
+
+    .container-cuerpo {
+        width: 100%;
+        height: 1860px;
+        flex-direction: column;
+        /* background-color: red; */
+        overflow: hidden;
+    }
+
+    .card1 {
+        position:absolute;
+        left: 0%;
+        width: 100%;
+        height: 920px;
+        flex-direction: column;
+        background-color: #f1f1f1;
+    }
+
+    .img-card1 {
+        position:absolute;
+        left: 35px;
+        width: 800px;
+        height: 600px;
+        flex-direction: column;
+        /* background-color: violet;  */   
+    }
+
+    .cont-card1 {
+       /* background-color: #F7F7F7; */
+        position: absolute;
+        width: 720px;
+        height: 250px;
+        left: 50px;
+        top: 610px;
+        cursor: pointer;   
+    }
+
+    .logo-leerMas1 {
+        /* background-color: #EA2134; */
+        /* position: absolute; */
+        top: 860px;
+        right: 78%;
+        cursor: pointer; 
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-leerMas1 a i {  
+       top: 860px;
+       font-size: 30px;
+       margin-right: 10px;
+       color: var(--negro);
+   }
+
+
+   .card2 {
+      flex-direction: column;
+      width: 100%;
+      height: 920px;
+      margin-top: 950px;
+        background-color:#f1f1f1;
+      position: absolute;
+      left: 0%;
+  }
+
+  .img-card2 {
+        position: absolute;
+        left:35px;
+        border-radius: 20px;
+        height: 500px;
+        width: 600px;
+        object-fit: cover;
+        cursor: pointer;  
+    }
+
+    .cont-card2 {
+       /* background-color: #F7F7F7; */
+       /* position: absolute; */
+       margin-left: 70px;
+       height: 250px;
+       width: 720px;
+       margin-top: 600px;
+       cursor: pointer;  
+   }
+
+   .logo-leerMas2 {
+        /* background-color: #EA2134; */
+        /* position: absolute; */
+        top: 860px;
+        right: 78%;
+        cursor: pointer; 
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .barraNav {
+        display: flex;
+        justify-content: space-between;
+        width: 980px;
+        margin: auto;
+        /* position: relative; */
+        align-items: center;
+    }
+
+    .contenedorInfo {
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        top: 30px;
+        /* margin: auto; */
+        /* no me funciona el margin auto */
+        margin-left: 20px;
+        overflow: hidden;   
+    }
+
+    .portada {
+       width: 100%;
+       height: 500px;
+       top: 55px;
+       position:relative;
+       background-color: var(--negro);
+       overflow: hidden;
+   }
+
+   .contenedorInfo h2 {
+        font-size: 15px;
+        
+    }
+
+    .contenedorInfo h1 {
+        font-size: 25px;
+        /* margin-bottom: 30px; */
+    }
+
+    .contenedorInfo p {
+        font-size: 15px;
+        /* margin-bottom: 30px; */
+    }
+    
+
+    .container-footer{
+        width: 1000px;
+    }
+
+    .container-footer footer {
+        width: 1000px;
+    }
+
+    .container-footer hr {
+        width: 1000px;
+    } 
+
+    /* -------Buscador--------- */
+
+    #ctn-icon-search {
+        /* background-color: red; */
+        display: flex;
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        justify-content: center;
+        align-items:center;
+        margin:94%;
+
+    }
+
+    #ctn-icon-search i{
+        font-size: 15px;
+        color: var(--negro);
+        cursor: pointer;
+        padding: 15px 25px;
+    }
+
+    #ctn-bars-search {
+        position: fixed;
+        /* position fixed para q quede fija */
+        top: -35px;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        z-index: 10;
+        /* el z index hace q el buscador este por encima de todo */
+        transition: all 600ms;
+    }
+
+    #ctn-bars-search input {
+        /* display: block; */
+        width: 760px;
+        margin-left: 100px;
+        padding: 10px;
+        font-size: 18px;
+        outline: 0; 
+        /* el outline es para q no se marque con un recuadro negro la barra buscadora cunado aprieto para escribir */
+    }
+
+    #boxSearch {
+        position: fixed;
+        margin: 0px;
+        top: 130px;
+        width: 100%;
+        background: white;
+        z-index: 9;
+        list-style-type: none;
+        display: none;
+    }
+
+    #boxSearch li a{
+        display: block;
+        /* hago display block para que cada a se vea como un bloque, cada una con su margen */
+        width: 100%;
+        margin-left: 130px;
+        color: darkslategray;
+        padding: 10px;
+
+    }
+
+    #boxSearch li a i{
+        margin-right: 10px;
+    }
+
+    #boxSearch li a:hover{
+        background-color: whitesmoke;
+    }
+
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+@media (max-width: 780px) {
+    
     .container-all {
-        width: 768px;
+        width: 100%;
     }
 
     .container-cuerpo {
         width: 768px;
         height: 1860px;
         flex-direction: column;
-        /* background-color: aqua; */
+        /* background-color: red; */
         overflow: hidden;
     }
 
@@ -511,8 +744,8 @@ body {
 
     .img-card1 {
         position:absolute;
-        left: 2%;
-        width: 500px;
+        left: 20px;
+        width: 680px;
         height: 600px;
         flex-direction: column;
         /* background-color: violet;  */   
@@ -523,7 +756,7 @@ body {
         position: absolute;
         width: 720px;
         height: 250px;
-        left: 2px;
+        left: 20px;
         top: 610px;
         cursor: pointer;   
     }
@@ -532,7 +765,7 @@ body {
         /* background-color: #EA2134; */
         /* position: absolute; */
         top: 860px;
-        right: 78%;
+        right: 75%;
         cursor: pointer; 
         width: 150px;
         display: flex;
@@ -559,7 +792,7 @@ body {
 
   .img-card2 {
         position: absolute;
-        left:0px;
+        left:20px;
         border-radius: 20px;
         height: 500px;
         width: 600px;
@@ -570,7 +803,7 @@ body {
     .cont-card2 {
        /* background-color: #F7F7F7; */
        /* position: absolute; */
-       margin-left: 15px;
+       margin-left: 45px;
        height: 250px;
        width: 720px;
        margin-top: 600px;
@@ -581,7 +814,7 @@ body {
         /* background-color: #EA2134; */
         /* position: absolute; */
         top: 860px;
-        right: 78%;
+        right: 75%;
         cursor: pointer; 
         width: 150px;
         display: flex;
@@ -591,7 +824,7 @@ body {
     .barraNav {
         display: flex;
         justify-content: space-between;
-        width: 768px;
+        width: 750px;
         margin: auto;
         /* position: relative; */
         align-items: center;
@@ -609,7 +842,7 @@ body {
     }
 
     .portada {
-       width: 768px;
+       width: 780px;
        height: 500px;
        top: 55px;
        position:relative;
@@ -672,6 +905,10 @@ body {
         display: flex;
     }
 
+    .container-footer{
+        width: 780px;
+    }
+
     .container-footer footer {
         width: 768px;
     }
@@ -680,10 +917,85 @@ body {
         width: 768px;
     }
 
+    /* -------Buscador--------- */
+
+    #ctn-icon-search {
+        /* background-color: red; */
+        display: flex;
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        justify-content: center;
+        align-items:center;
+        margin:85%;
+
+    }
+
+    #ctn-icon-search i{
+        font-size: 20px;
+        color: var(--negro);
+        cursor: pointer;
+        padding: 15px 25px;
+        /* background-color: #EA2134; */
+    }
+
+    #ctn-bars-search {
+        position: fixed;
+        /* position fixed para q quede fija */
+        top: -35px;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        z-index: 10;
+        /* el z index hace q el buscador este por encima de todo */
+        transition: all 600ms;
+    }
+
+    #ctn-bars-search input {
+        /* display: block; */
+        width: 760px;
+        margin-left: 100px;
+        padding: 10px;
+        font-size: 18px;
+        outline: 0; 
+        /* el outline es para q no se marque con un recuadro negro la barra buscadora cunado aprieto para escribir */
+    }
+
+    #boxSearch {
+        position: fixed;
+        margin: 0px;
+        top: 130px;
+        width: 100%;
+        background: white;
+        z-index: 9;
+        list-style-type: none;
+        display: none;
+    }
+
+    #boxSearch li a{
+        display: block;
+        /* hago display block para que cada a se vea como un bloque, cada una con su margen */
+        width: 100%;
+        margin-left: 130px;
+        color: darkslategray;
+        padding: 10px;
+
+    }
+
+    #boxSearch li a i{
+        margin-right: 10px;
+    }
+
+    #boxSearch li a:hover{
+        background-color: whitesmoke;
+    }
+    
 }
 
+/* ---------------------------------------------------------------------------------------------- */
+
 @media (max-width: 380px) {
-    .container-all {
+    .container-cuerpo {
         width: 380px;
     }
 
@@ -876,6 +1188,10 @@ body {
         display: flex;
     }
 
+    .container-footer {
+        width: 380px;
+    }
+
     .container-footer footer {
         width: 380px;
         flex-direction: column;
@@ -886,6 +1202,7 @@ body {
         width: 380px;
     }
 }
+
 
 
 

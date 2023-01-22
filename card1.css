@@ -238,13 +238,28 @@ body {
 }
 
 .cont-articulo {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .cont-articulo p {
     width: 500px;
-    margin-left: 110px;
-    margin-top: 100px;
+    margin-left: 50px;
+    margin-top: 0;
+    
+}
+
+.cont-articulo p a {
+    color: var(--negro);
+    text-decoration: underline;
+}
+
+.trabajos{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .cont-video {
