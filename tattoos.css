@@ -316,8 +316,401 @@ body {
 
 .container-footer hr {
     border: none;
-    width: 1280px;
+    max-width: 100%;
     height: 1px;
     background: var(--blanco);
     margin: auto;
 }
+
+/* ------------------------------------- responsive design ----------------------------------------- */
+
+#iconMenu {
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+@media (max-width: 1220px) {
+    .barraNav,
+    .contenedorInfo {
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+    }
+
+     /* -------Buscador--------- */
+
+    #ctn-icon-search {
+        /* background-color: red; */
+        display: flex;
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        justify-content: center;
+        align-items:center;
+        margin:94%;
+
+    }
+
+    #ctn-icon-search i{
+        font-size: 15px;
+        color: var(--negro);
+        cursor: pointer;
+        padding: 15px 25px;
+    }
+
+    #ctn-bars-search {
+        position: fixed;
+        /* position fixed para q quede fija */
+        top: -35px;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        z-index: 10;
+        /* el z index hace q el buscador este por encima de todo */
+        transition: all 600ms;
+    }
+
+    #ctn-bars-search input {
+        /* display: block; */
+        width: 1000px;
+        margin-left: 100px;
+        padding: 10px;
+        font-size: 18px;
+        outline: 0; 
+        /* el outline es para q no se marque con un recuadro negro la barra buscadora cunado aprieto para escribir */
+    }
+
+    /* -------Gallery--------- */
+
+    .gallery {
+        max-width: 100%;
+        /* background-color: #EA2134; */
+        width: 1000px;
+    }
+
+    /* <!-- -------pie de pagina--------- -->  */
+
+    .container-footer hr {
+        /* background-color: #EA2134; */
+        max-width: 100%;
+        width: 1220px;
+    }
+
+    /* ---------------------------------------------------------------------------------------------- */
+
+    @media (max-width: 780px) {
+    .barraNav,
+    .contenedorInfo {
+        max-width: 740px;
+        padding: 0 20px;
+    }
+    }
+
+     /* -------Buscador--------- */
+
+    #ctn-icon-search {
+        /* background-color: red; */
+        display: flex;
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        justify-content: center;
+        align-items:center;
+        margin:94%;
+
+    }
+
+    #ctn-icon-search i{
+        font-size: 15px;
+        color: var(--negro);
+        cursor: pointer;
+        padding: 15px 25px;
+    }
+
+    #ctn-bars-search {
+        position: fixed;
+        /* position fixed para q quede fija */
+        top: -35px;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        z-index: 10;
+        /* el z index hace q el buscador este por encima de todo */
+        transition: all 600ms;
+    }
+
+    #ctn-bars-search input {
+        /* display: block; */
+        width: 640px;
+        margin-left: 50px;
+        padding: 10px;
+        font-size: 18px;
+        outline: 0; 
+        /* el outline es para q no se marque con un recuadro negro la barra buscadora cunado aprieto para escribir */
+    }
+
+    /* -------Imagen Protada--------- */
+
+.portada {
+    width: 100%;
+    height: 480px;
+    top: 55px;
+    position:relative;
+    background-color: var(--negro);
+}
+
+
+.imgPortada {
+    background-color: var(--gris);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.contenedorInfo {
+    /* background-color: red; */
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top: 80px;
+    /* margin: auto; */
+    /* no me funciona el margin auto */
+    margin-left: 30px;
+}
+
+.contenedorInfo h2 {
+    font-size: 25px;
+    color: var(--blanco);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+
+}
+
+.contenedorInfo h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: var(--blanco);
+}
+
+.contenedorInfo p {
+    font-size: 20px;
+    color: var(--blanco);
+    letter-spacing: 1px;
+}
+
+    /* -------Gallery--------- */
+
+    .gallery {
+        max-width: 100%;
+        /* background-color: #EA2134; */
+        width: 700px;
+        columns: 3 150px;
+        top: 80px;
+        /* background-color: red; */
+        column-gap: 15px;
+    }
+
+    /* <!-- -------pie de pagina--------- -->  */
+
+    .container-footer hr {
+        /* background-color: #EA2134; */
+        max-width: 100%;
+        width: 780px;
+    }
+
+    /* ---------------------------------------------------------------------------------------------- */
+
+    @media (max-width: 380px) {
+        .barraNav,
+        .contenedorInfo {
+            max-width: 340px;
+            padding: 0 20px;
+        }
+        }
+
+        
+    .lista {
+        transition: all 300ms;
+    }
+
+    .lista {
+        background: var(--blanco);
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        overflow: hidden;
+        box-shadow: 20px 0px 30px -30px var(--negro);
+        flex-direction: column;
+        transform: translateX(-250px);
+    }
+
+    .show-lateral {
+        width: 150px;
+        transform: translateX(0px);
+    }
+
+    .lista li {
+        padding: 30px;
+    }
+
+    .header-contenido {
+        max-width: 380px;
+    }
+
+    .btn {
+        font-size: 20px;
+        top: 20px;
+        /* padding: 20px; */
+    }
+
+    #iconMenu {
+        display: flex;
+    }
+    
+         /* -------Buscador--------- */
+    
+         #ctn-icon-search {
+            /* background-color: red; */
+            display: flex;
+            position: absolute;
+            width: 20px;
+            height: 100%;
+            justify-content: center;
+            align-items:center;
+            margin:65%;
+    
+        }
+        
+    
+        #ctn-bars-search input {
+            /* display: block; */
+            width: 300px;
+            margin-left: 20px;
+            padding: 10px;
+            font-size: 18px;
+            outline: 0; 
+            /* el outline es para q no se marque con un recuadro negro la barra buscadora cunado aprieto para escribir */
+        }
+    
+        #boxSearch {
+            position: fixed;
+            margin: 0px;
+            top: 130px;
+            width: 100%;
+            background: white;
+            z-index: 9;
+            list-style-type: none;
+            display: none;
+        }
+    
+        #boxSearch li a{
+            display: block;
+            /* hago display block para que cada a se vea como un bloque, cada una con su margen */
+            width: 100%;
+            margin-left: 130px;
+            color: darkslategray;
+            padding: 10px;
+    
+        }
+    
+        #boxSearch li a i{
+            margin-right: 10px;
+        }
+    
+        #boxSearch li a:hover{
+            background-color: whitesmoke;
+        }
+        /* -------Imagen Protada--------- */
+    
+    .portada {
+        width: 100%;
+        height: 280px;
+        top: 55px;
+        position:relative;
+        background-color: var(--negro);
+    }
+    
+    
+    .imgPortada {
+        background-color: var(--gris);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    .contenedorInfo {
+        /* background-color: red; */
+        position: absolute;
+        width: 600px;
+        height: 500px;
+        top: 35px;
+        /* margin: auto; */
+        /* no me funciona el margin auto */
+        margin-left: 20px;
+    }
+    
+    .contenedorInfo h2 {
+        font-size: 18px;
+        color: var(--blanco);
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    
+    }
+    
+    .contenedorInfo h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        color: var(--blanco);
+    }
+    
+    .contenedorInfo p {
+        font-size: 15px;
+        color: var(--blanco);
+        letter-spacing: 1px;
+    }
+    
+        /* -------Gallery--------- */
+    
+        .gallery {
+            max-width: 100%;
+            /* background-color: #EA2134; */
+            width: 300px;
+            columns: 3 150px;
+            top: 80px;
+            /* background-color: red; */
+            column-gap: 15px;
+        }
+    
+
+        /* -------pie de pagina--------- */
+
+    .container-footer {
+        width: 380px;
+    }
+
+    .container-footer footer {
+        width: 380px;
+        flex-direction: column;
+        height: 90px;
+    }
+
+    .container-footer hr {
+        width: 380px;
+    }
+

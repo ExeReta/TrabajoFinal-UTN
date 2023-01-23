@@ -243,6 +243,7 @@ body {
 }
 
 .cont-articulo p {
+    max-width: 100%;
     width: 500px;
     margin-left: 50px;
     margin-top: 0;
@@ -361,4 +362,483 @@ body {
     margin: auto;
 }
 
+/* ------------------------------------- responsive design ----------------------------------------- */
 
+#iconMenu {
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+@media (max-width: 1220px) {
+    .barraNav,
+    .contenedorInfo {
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+    
+
+     /* -------Buscador--------- */
+
+    #ctn-icon-search {
+        /* background-color: red; */
+        display: flex;
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        justify-content: center;
+        align-items:center;
+        margin:94%;
+
+    }
+
+    #ctn-icon-search i{
+        font-size: 15px;
+        color: var(--negro);
+        cursor: pointer;
+        padding: 15px 25px;
+    }
+
+    #ctn-bars-search {
+        position: fixed;
+        /* position fixed para q quede fija */
+        top: -35px;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        z-index: 10;
+        /* el z index hace q el buscador este por encima de todo */
+        transition: all 600ms;
+    }
+
+    #ctn-bars-search input {
+        /* display: block; */
+        width: 1000px;
+        margin-left: 100px;
+        padding: 10px;
+        font-size: 18px;
+        outline: 0; 
+        /* el outline es para q no se marque con un recuadro negro la barra buscadora cunado aprieto para escribir */
+    }
+
+    /* <!-- -------Cuerpo--------- --> */
+
+        .container-art {
+            max-width: 1000px;
+            margin: auto;
+            position: relative;
+            margin-top: 80px;
+            /* background-color: red; */
+        
+        }
+        
+        .cont-articulo {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            /* background-color: aquamarine; */
+        }
+        
+        .cont-articulo p {
+            max-width: 100%;
+            width: 380px;
+            margin-left: 20px;
+            margin-top: 0;
+            /* background-color: blueviolet; */
+            
+        }
+        
+        .cont-articulo p a {
+            color: var(--negro);
+            text-decoration: underline;
+        }
+        
+        .trabajos{
+            max-width: 100%;
+            height: 150px;
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        /* -------pie de pagina--------- */
+
+    .container-footer footer {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-footer hr {
+        border: none;
+        max-width: 100%;
+        height: 1px;
+        background: var(--blanco);
+        margin: auto;
+    }
+ }
+   
+    /* ---------------------------------------------------------------------------------------------- */
+
+    @media (max-width: 780px) {
+    .barraNav,
+    .contenedorInfo {
+        max-width: 740px;
+        padding: 0 20px;
+    }
+    
+
+     /* -------Buscador--------- */
+
+    #ctn-icon-search {
+        /* background-color: red; */
+        display: flex;
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        justify-content: center;
+        align-items:center;
+        margin:94%;
+
+    }
+
+    #ctn-icon-search i{
+        font-size: 15px;
+        color: var(--negro);
+        cursor: pointer;
+        padding: 15px 25px;
+    }
+
+    #ctn-bars-search {
+        position: fixed;
+        /* position fixed para q quede fija */
+        top: -35px;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        z-index: 10;
+        /* el z index hace q el buscador este por encima de todo */
+        transition: all 600ms;
+    }
+
+    #ctn-bars-search input {
+        /* display: block; */
+        width: 600px;
+        margin-left: 70px;
+        padding: 10px;
+        font-size: 18px;
+        outline: 0; 
+        /* el outline es para q no se marque con un recuadro negro la barra buscadora cunado aprieto para escribir */
+    }
+
+    /* -------Imagen Protada--------- */
+
+    .portada {
+        width: 100%;
+        height: 650px;
+        top: 55px;
+        position:relative;
+        background-color: var(--negro);
+    }
+
+    .contenedorInfo {
+        /* background-color: red; */
+        position: absolute;
+        width: 600px;
+        height: 500px;
+        top: 20px;
+        /* margin: auto; */
+        /* no me funciona el margin auto */
+        margin-left: 40px;
+    }
+    /* <!-- -------Cuerpo--------- --> */
+
+        .container-art {
+            max-width: 740px;
+            margin: auto;
+            position: relative;
+            margin-top: 80px;
+            /* background-color: red; */
+        
+        }
+        
+        .cont-articulo {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            /* background-color: aquamarine; */
+        }
+        
+        
+        .cont-articulo p {
+            max-width: 100%;
+            width: 700px;
+            margin-left: 20px;
+            margin-top: 20px;
+            /* background-color: blueviolet; */
+            
+        }
+        
+        .cont-articulo p a {
+            color: var(--negro);
+            text-decoration: underline;
+        }
+        
+        .trabajos{
+            max-width: 100%;
+            height: 250px;
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            margin-left: 50px;
+        
+        }
+        
+        /* -------pie de pagina--------- */
+
+    .container-footer footer {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-footer hr {
+        border: none;
+        width: 1220px;
+        height: 1px;
+        background: var(--blanco);
+        margin: auto;
+    }
+ }
+
+    /* ---------------------------------------------------------------------------------------------- */
+
+    @media (max-width: 380px) {
+        .barraNav,
+        .contenedorInfo {
+            max-width: 380px;
+            padding: 0 20px;
+        }
+    
+
+        .lista {
+            transition: all 300ms;
+        }
+    
+        .lista {
+            background: var(--blanco);
+            width: 0px;
+            height: 100vh;
+            position: fixed;
+            top: 50px;
+            left: 0;
+            overflow: hidden;
+            box-shadow: 20px 0px 30px -30px var(--negro);
+            flex-direction: column;
+            transform: translateX(-250px);
+        }
+    
+        .show-lateral {
+            width: 150px;
+            transform: translateX(0px);
+        }
+    
+        .lista li {
+            padding: 30px;
+        }
+    
+        .header-contenido {
+            max-width: 380px;
+        }
+    
+        .btn {
+            font-size: 20px;
+            top: 20px;
+            /* padding: 20px; */
+        }
+    
+        #iconMenu {
+            display: flex;
+        }
+    
+         /* -------Buscador--------- */
+    
+        #ctn-icon-search {
+            /* background-color: red; */
+            display: flex;
+            position: absolute;
+            width: 20px;
+            height: 100%;
+            justify-content: center;
+            align-items:center;
+            margin:65%;
+    
+        }
+    
+        #ctn-bars-search input {
+            /* display: block; */
+            width: 300px;
+            margin-left: 20px;
+            padding: 10px;
+            font-size: 18px;
+            outline: 0; 
+            /* el outline es para q no se marque con un recuadro negro la barra buscadora cunado aprieto para escribir */
+        }
+    
+        /* -------Imagen Protada--------- */
+    
+        .portada {
+            width: 100%;
+            height: 450px;
+            top: 55px;
+            position:relative;
+            background-color: var(--negro);
+        }
+    
+        .contenedorInfo {
+            /* background-color: red; */
+            position: absolute;
+            width: 600px;
+            height: 500px;
+            top: 1px;
+            /* margin: auto; */
+            /* no me funciona el margin auto */
+            margin-left: 5px;
+        }
+
+        .contenedorInfo h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+            color: var(--blanco);
+            top: 5px;
+        }
+        
+        /* <!-- -------Cuerpo--------- --> */
+    
+            .container-art {
+                max-width: 340px;
+                margin: auto;
+                position: relative;
+                margin-top: 80px;
+                /* background-color: red; */
+            
+            }
+            
+            .cont-articulo {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                /* background-color: aquamarine; */
+                height: 1100px;
+                
+            }
+            
+            .cont-articulo img {
+                width: 300px;
+                height: 340px;
+                margin-left: 20px;
+            }
+            
+            .cont-articulo p {
+                max-width: 100%;
+                width: 300px;
+                margin-left: 20px;
+                margin-top: 20px;
+                /* background-color: blueviolet; */
+            }
+            
+            .cont-articulo p a {
+                color: var(--negro);
+                text-decoration: underline;
+            }
+            
+            .trabajos{
+                display: block;
+                max-width: 100%;
+                height: 250px;
+                display: column;
+                gap: 10px;
+                margin-top: 20px;
+                margin-left: 2px;
+                display: none;
+                
+            }
+
+            .cont-video iframe {
+                width: 250px;
+                height: 150px;
+            }
+
+            .cont-map {
+                margin: auto;
+                margin-top: 40px;
+                width: 300px;
+                /* background-color: aqua; */
+            }
+            
+            .cont-map h1 {
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+            
+            .ubicacion {
+                display: block
+            }
+            
+            .direccion {
+                width: 300px;
+                /* background-color: antiquewhite; */
+
+            
+            }
+            
+            .direccion h2 {
+                
+                margin-bottom: 20px;
+                font-size: 15px;
+            }
+            
+            .direccion a {
+                color: var(--negro);
+                font-weight: bold;
+            }
+            
+            .ubicacion iframe {
+                width: 250px;
+                height: 150px;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            
+            /* -------pie de pagina--------- */
+    
+            .container-footer {
+                width: 380px;
+            }
+        
+            .container-footer footer {
+                width: 380px;
+                flex-direction: column;
+                height: 90px;
+            }
+        
+            .container-footer hr {
+                width: 380px;
+            }
+
+     }
+        
+        
