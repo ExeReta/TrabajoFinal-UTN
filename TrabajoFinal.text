@@ -1,5 +1,16 @@
 
 TattooTT es una página tipo blog.
+
+Listados de pautas opcionales:
+
+Animaciones con CSS
+Accesibilidad: Textos alternativos en imágenes, labels en inputs, etc.
+Muy responsive
+Cosas raras de CSS (blend-modes, clip-path, shapes, entre otros)
+Uso de JS para menu responsive y barra buscadora.
+Insertar videos de Youtube y googleMap
+
+
 Se elegió hacerlo por html, css y java script porq fueron los temas que más comprendi y en los que me senti con más soltura a la hora de trabajarlos.
 Pero en realidad la estrategia que habia tomado en un principio era intentar entregarlo en React, se iba a hacer primero todo en html y css porque son los lenguajes del curso con los que mejor me termine llevando ya que tuve mis "perdidas" tanto con Js y react pero no me termino dando el tiempo.
 
