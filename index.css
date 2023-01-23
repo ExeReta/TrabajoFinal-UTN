@@ -1205,7 +1205,7 @@ body {
     /* -------Buscador--------- */
 
     #ctn-icon-search {
-        /* background-color: red; */
+        /* background-color: rgb(0, 255, 106); */
         display: flex;
         position: absolute;
         width: 20px;
@@ -1220,8 +1220,9 @@ body {
         font-size: 20px;
         color: var(--negro);
         cursor: pointer;
-        padding: 15px 25px;
+        /* padding: 15px 25px; */
         /* background-color: #EA2134; */
+        position: fixed;
     }
 
     #ctn-bars-search {

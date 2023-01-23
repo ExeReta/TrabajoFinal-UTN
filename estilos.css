@@ -1380,6 +1380,15 @@ body {
         margin:65%;
 
     }
+
+    #ctn-icon-search i{
+        font-size: 20px;
+        color: var(--negro);
+        cursor: pointer;
+        /* padding: 15px 25px; */
+        /* background-color: #EA2134; */
+        position: fixed;
+    }
     
 
     #ctn-bars-search input {
