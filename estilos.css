@@ -1381,6 +1381,19 @@ body {
 
     }
 
+    #ctn-icon-search {
+        /* background-color: red; */
+        display: flex;
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        justify-content: center;
+        align-items:center;
+        margin:65%;
+        top: 0%;
+
+    }
+
     #ctn-icon-search i{
         font-size: 20px;
         color: var(--negro);
@@ -1388,6 +1401,7 @@ body {
         /* padding: 15px 25px; */
         /* background-color: #EA2134; */
         position: fixed;
+        top: 0%;
     }
     
 

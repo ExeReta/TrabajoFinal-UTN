@@ -686,6 +686,7 @@ body {
             justify-content: center;
             align-items:center;
             margin:65%;
+            top: 0%;
     
         }
 
@@ -696,6 +697,7 @@ body {
             /* padding: 15px 25px; */
             /* background-color: #EA2134; */
             position: fixed;
+            top: 0%;
         }
     
         #ctn-bars-search input {
